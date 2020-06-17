@@ -8,6 +8,11 @@
  
  */
  fn survive() {
-     
-    
+  let mut state = State {
+    cordage: None,
+    cutting_tool: None,
+    cover: None,
+    container: None,
+    combustion: None,
+};   
  }
