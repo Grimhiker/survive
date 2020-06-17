@@ -7,7 +7,14 @@
  *once fire water and shelter are taken care of go find food 
  
  */
- fn survive() {
+pub struct State {
+   cordage: Option<Cordage>,
+   cutting_tool: Option<CuttingTool>,
+   cover: Option<Cover>,
+   container: Option<Container>,
+   combustion: Option<Combustion>,
+}
+ fn Survive() {
     let mut state = State {
         cordage: None,
         cutting_tool: None,
@@ -15,12 +22,5 @@
         container: None,
         combustion: None,
     };
-    pub struct State {
-        cordage: Option<Cordage>,
-        cutting_tool: Option<CuttingTool>,
-        cover: Option<Cover>,
-        container: Option<Container>,
-        combustion: Option<Combustion>,
-     };
-    
- }
+ 
+   
