@@ -8,11 +8,19 @@
  
  */
  fn survive() {
-  let mut state = State {
-    cordage: None,
-    cutting_tool: None,
-    cover: None,
-    container: None,
-    combustion: None,
-};   
+    let mut state = State {
+        cordage: None,
+        cutting_tool: None,
+        cover: None,
+        container: None,
+        combustion: None,
+    };
+    pub struct State {
+        cordage: Option<Cordage>,
+        cutting_tool: Option<CuttingTool>,
+        cover: Option<Cover>,
+        container: Option<Container>,
+        combustion: Option<Combustion>,
+     };
+    
  }
